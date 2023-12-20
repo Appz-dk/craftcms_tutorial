@@ -1,0 +1,22 @@
+dateModified: 1703114555
+email:
+  fromEmail: patrick.fyhn93@gmail.com
+  fromName: tutorial
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    249f7d43-8af2-47db-9d07-30b443a9fe48: Common # Common
+    d76346fb-4628-4b88-9b6c-116a5a3c9249: tutorial # tutorial
+    f73a38d6-e3b3-46db-96ad-aae7b6f110ee: tutorial # tutorial
+system:
+  edition: solo
+  live: true
+  name: tutorial
+  schemaVersion: 4.5.3.0
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true
