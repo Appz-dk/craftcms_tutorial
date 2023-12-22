@@ -1,0 +1,19 @@
+columnSuffix: krxruamb
+contentColumnType: text
+fieldGroup: ad971c07-6adb-4042-bf92-7fcde478105a # Blog
+handle: summary
+instructions: 'Summaries should be one or two sentences.'
+name: Summary
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 1
+  multiline: true
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

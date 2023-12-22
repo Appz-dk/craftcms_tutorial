@@ -1,0 +1,47 @@
+defaultPlacement: end
+fieldLayouts:
+  627ee348-3b05-434c-8aef-cc95b90abee0:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            uid: aca17c6e-6663-4f22-9e2d-c51b35a82ca2
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: df189681-65ec-49bd-b839-ef7b54abbfe8
+        userCondition: null
+handle: topics
+name: Topics
+siteSettings:
+  d76346fb-4628-4b88-9b6c-116a5a3c9249: # tutorial
+    hasUrls: true
+    template: blog/_topic
+    uriFormat: 'blog/topic/{slug}'
+structure:
+  maxLevels: 1
+  uid: 001a1980-e9bf-4acb-a60c-69026aa7e7dc

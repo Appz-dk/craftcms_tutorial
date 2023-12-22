@@ -1,12 +1,33 @@
-dateModified: 1703114555
+dateModified: 1703283624
 email:
   fromEmail: patrick.fyhn93@gmail.com
   fromName: tutorial
   transportType: craft\mail\transportadapters\Sendmail
+fs:
+  hardDisk:
+    hasUrls: true
+    name: 'Hard Disk'
+    settings:
+      path: '@webroot/uploads/images'
+    type: craft\fs\Local
+    url: '@web/uploads/images'
 meta:
   __names__:
+    0e8eb3c4-447a-4e6e-a846-bb332a6d0480: Summary # Summary
+    5bdd9a86-0f73-4c2a-92f7-25ec85f87c49: Blog # Blog
+    6ddf0f38-dc73-4212-9841-39d1a9c5acfa: 'Post Categories' # Post Categories
+    6f5fa957-d96f-4a29-981a-8129573ffbae: Topics # Topics
+    8f7544b2-6b9b-4d1f-9081-e543efb2b41d: Text # Text
+    35fbd2bd-5783-45f1-9c72-2b1d7ad98e91: Image # Image
     249f7d43-8af2-47db-9d07-30b443a9fe48: Common # Common
+    797c2a8b-e614-4666-8df9-6c0a0d62fa52: Text # Text
+    3537e996-bb16-45d8-9b65-7185132589e0: Post # Post
+    ad971c07-6adb-4042-bf92-7fcde478105a: Blog # Blog
+    c4f3b695-ee66-4ef2-b93d-8357df77e00b: Image # Image
+    c9fe2f35-4be2-4693-be2b-ecc922c3dd0b: 'Feature Image' # Feature Image
     d76346fb-4628-4b88-9b6c-116a5a3c9249: tutorial # tutorial
+    e8a4b7db-7918-4ded-8611-e314130eeab8: 'Post Content' # Post Content
+    ef77e8dd-a710-4edc-a90b-96e1d10abad9: Images # Images
     f73a38d6-e3b3-46db-96ad-aae7b6f110ee: tutorial # tutorial
 system:
   edition: solo
