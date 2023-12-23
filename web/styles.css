@@ -1,0 +1,13 @@
+/* Hello, world! */
+
+.feature-image {
+  display: block;
+  width: 600px;
+}
+
+.feature-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}

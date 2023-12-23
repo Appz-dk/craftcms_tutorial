@@ -1,0 +1,71 @@
+{# You can omit the `.twig` when referencing another template: #}
+{% extends '_layout' %}
+
+{# Load the attached image #}
+{% set featureImage = entry.featureImage.one() %}
+
+{# Load attached topics: #}
+{% set topics = entry.postCategories.all() %}
+
+{# Load content blocks: #}
+{% set postContent = entry.postContent.all() %}
+{# {% set postContent = [] %} #}
+
+
+
+{# Provide something to the `content` block in `_layout.twig`: #}
+{% block content %}
+  {# Access a property of a variable using “dot” notation: #}
+  <h1>{{ entry.title }}</h1>
+
+  {# Output the postDate with a date filter and set datetime attribute for screen readers etc #}
+  <time datetime="{{ entry.postDate | atom }}">
+    {{entry.postDate | date }}
+  </time>
+
+  {# Output the image, if one was found: #}
+  {% if featureImage %}
+    <div class="feature-image">
+      {{ featureImage.getImg() }}
+    </div>
+  {% endif %}
+
+  {% if topics | length %}
+    <ul class="topics">
+      {% for topic in topics %}
+        <li>{{ topic.getLink() }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  <div class="post-content">
+    {% for contentBlock in postContent %}
+      {# Memoize the block type’s handle so we can use it later: #}
+      {% set blockType = contentBlock.type.handle %}
+
+      {# Control what is displayed based on the `type`: #}
+      {% if blockType == 'text' %}
+        <div class="content-block text">
+          {{ contentBlock.text | md }}
+        </div>
+      {% elseif blockType == 'image' %}
+        {% set image = contentBlock.image.one() %}
+
+        <div class="content-block image">
+          {{ image.getImg() }}
+        </div>
+      {% else %}
+        <div class="content-block unsupported">
+          <p>Unsupported bloc type <code>{{ blockType }}</code> </p>
+        </div>
+      {% endif %}
+
+    {# `for` tags also support an `else` block for when there’s no content! #}
+    {% else %}
+      <div class="content-block empty">
+        <p>This post has no content!</p>
+      </div>
+    {% endfor %}
+  </div>
+
+{% endblock %}
