@@ -1,0 +1,19 @@
+columnSuffix: ogjerhkw
+contentColumnType: text
+fieldGroup: b61f8ef1-adb8-426c-8761-0e795f525cd3 # About
+handle: bio
+instructions: null
+name: Bio
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 8
+  multiline: true
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

@@ -1,0 +1,19 @@
+columnSuffix: btribvfr
+contentColumnType: text
+fieldGroup: 67743bea-4a55-4b90-bb55-41f55fff3554 # Global
+handle: description
+instructions: null
+name: Description
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: true
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText
