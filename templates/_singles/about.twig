@@ -10,7 +10,11 @@
 
     {% if profilePhoto %}
       <div class="profile-photo">
-        {{ profilePhoto.getImg() }}
+        {{ profilePhoto.getImg({
+          mode: 'crop',
+          width: 600,
+          height: 600,
+        }) }}
       </div>
     {% endif %}
 
