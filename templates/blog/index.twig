@@ -2,7 +2,14 @@
 {% extends '_layout' %}
 
 {# Getting all posts from the blog section #}
-{% set posts = craft.entries().section('blog').all() %}
+{# {% set posts = craft.entries().section('blog').all() %} #}
+
+{# Getting all posts with Eager Loading of featureImage #}
+{# Not sure I see a difference - in the network tab I still see a request for each image... but only have 4 posts #}
+{% set posts = craft.entries().section('blog').with([
+    ['featureImage', { withTransforms: ['thumbnail'] }],
+  ]).all() 
+%}
 
 {% block content %}
 
