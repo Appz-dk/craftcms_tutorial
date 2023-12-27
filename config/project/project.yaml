@@ -1,4 +1,4 @@
-dateModified: 1703629434
+dateModified: 1703714586
 email:
   fromEmail: patrick.fyhn93@gmail.com
   fromName: tutorial
@@ -20,6 +20,7 @@ meta:
     7cd9b9e1-1022-4f5c-93d5-f69fd7c51d5e: About # About
     8f7544b2-6b9b-4d1f-9081-e543efb2b41d: Text # Text
     35fbd2bd-5783-45f1-9c72-2b1d7ad98e91: Image # Image
+    63fac480-c3d5-4f5a-a130-7a8fd7d70e77: Thumbnail # Thumbnail
     249f7d43-8af2-47db-9d07-30b443a9fe48: Common # Common
     797c2a8b-e614-4666-8df9-6c0a0d62fa52: Text # Text
     3537e996-bb16-45d8-9b65-7185132589e0: Post # Post
