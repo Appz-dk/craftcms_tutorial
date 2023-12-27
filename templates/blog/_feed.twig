@@ -1,0 +1,25 @@
+
+{% for post in posts %}
+    {% set postImage = post.featureImage.one() %}
+
+    <article>
+
+      {% if postImage %}
+        <div class="thumbnail">
+          {{ postImage.getImg() }}
+        </div>
+      {% endif %}
+
+      <h2>{{ post.title }}</h2>
+
+      <time datetime="{{ post.postDate | atom }}">
+        {{ post.postDate | date }}
+      </time>
+
+      {{ post.summary | md }}
+
+      <a href="{{ post.url }}">Continue Reading</a>
+
+    </article>
+
+  {% endfor %}
