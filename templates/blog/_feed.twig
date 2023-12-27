@@ -5,9 +5,20 @@
     <article>
 
       {% if postImage %}
+
+        {# Image with optimazations added manually (mode & width in px) #}
+        {# <div class="thumbnail">
+          {{ postImage.getImg({
+            mode: 'fit',
+            width: 1200,
+          }) }}
+        </div> #}
+
+        {# Using Named Transforms -  reference transform by its handle, that we set up in Settings → Assets → Image Transforms #}
         <div class="thumbnail">
-          {{ postImage.getImg() }}
+          {{ postImage.getImg('thumbnail') }}
         </div>
+
       {% endif %}
 
       <h2>{{ post.title }}</h2>
