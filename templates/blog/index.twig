@@ -5,7 +5,8 @@
 {# {% set posts = craft.entries().section('blog').all() %} #}
 
 {# Getting all posts with Eager Loading of featureImage #}
-{# Not sure I see a difference - in the network tab I still see a request for each image... but only have 4 posts #}
+{# In chrome dev tolls network tab I still see a request for each image but read below #}
+{# Okay in the craft cms debug panel you can see a difference in DB queries & Performance Profiling #}
 {% set posts = craft.entries().section('blog').with([
     ['featureImage', { withTransforms: ['thumbnail'] }],
   ]).all() 
